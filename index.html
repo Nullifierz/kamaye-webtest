@@ -16,11 +16,11 @@
     rel="stylesheet">
 
   <!-- Style CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
 
   <!-- Odometer -->
-  <link rel="stylesheet" href="css/odometer.css">
-  <script src="js/odometer.js"></script>
+  <link rel="stylesheet" href="src/css/odometer.css">
+  <script src="src/js/odometer.js"></script>
 
   <!-- Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
@@ -36,12 +36,12 @@
     <div class="navbar-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about-us.html">About</a></li>
-        <li><a href="pages/our-services.html">Our Services</a></li>
+        <li><a href="src/pages/about-us.html">About</a></li>
+        <li><a href="src/pages/our-services.html">Our Services</a></li>
         <li>
           <div class="block"></div>
         </li>
-        <li><a href="pages/case-studies.html">Case Studies</a></li>
+        <li><a href="src/pages/case-studies.html">Case Studies</a></li>
         <li><a href="#contact" class="contact-us">CONTACT US!</a></li>
       </ul>
     </div>
@@ -711,7 +711,6 @@
   </script>
 
   <script>
-
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
@@ -843,7 +842,7 @@
   </script>
 
   <!-- My JavaScript -->
-  <script src="js/script.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>
