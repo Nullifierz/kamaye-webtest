@@ -40,18 +40,18 @@ window.addEventListener("scroll", function () {
 const countOdometer = document.querySelector(".brands-odometer");
 const influencersOdometer = document.querySelector(".influencers-odometer");
 
-// Opsi untuk Intersection Observer
+// Options for Intersection Observer
 const observerOptions = {
   root: null,
   rootMargin: "0px",
   threshold: 0.1,
 };
 
-// Fungsi yang dijalankan ketika elemen masuk ke dalam viewport
+// Function that runs when the element enters the viewport
 const handleIntersect = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Inisialisasi Odometer hanya ketika elemen terlihat
+      // Initialize Odometer only when the element is visible
       if (entry.target === countOdometer) {
         const odometer1 = new Odometer({
           el: countOdometer,
@@ -120,7 +120,7 @@ if (typeof gsap !== 'undefined' && gsap.registerPlugin && typeof ScrollTrigger !
   console.log("GSAP or ScrollTrigger is not available");
 }
 
-// Changing Content
+// Changing Content of AEC
 function changeContent(destination) {
   let content = "";
   switch (destination) {
