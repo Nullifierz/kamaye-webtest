@@ -9,21 +9,18 @@
   <!-- Icon Kamaye -->
   <link rel="icon" type="image/x-icon" href="../assets/img/Favicon-Positive.png" />
 
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../src/css/style.css" />
+
   <!-- Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 
-  <!-- Style CSS -->
-  <link rel="stylesheet" href="../css/style.css" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <!-- Odometer -->
-  <link rel="stylesheet" href="../css/odometer.css" />
-  <script src="../js/odometer.js"></script>
-
+  <link rel="stylesheet" href="../src/css/odometer.css" />
+  <script src="../src/js/odometer.js"></script>
 </head>
 
-<body style=" background-color: #FFcccc;">
+<body>
   <!-- Navbar Start -->
   <nav class="navbar" id="navbar">
     <a href="../" class="navbar-logo">
@@ -32,7 +29,7 @@
     <div class="navbar-nav">
       <ul>
         <li><a href="../">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="our-services.html">Our Services</a></li>
         <li>
           <div class="block"></div>
@@ -54,166 +51,94 @@
     </label>
   </nav>
   <!-- Navbar End -->
-
-  <!-- Hero Section Start-->
-  <section class="hero-case">
-    <video class="hero-case-bg desktop" autoplay loop muted>
-      <source src="../assets/video/case-studies/hero-case-bg.mp4" />
-    </video>
-
-    <video class="hero-case-bg mobile" autoplay loop muted>
-      <source src="../assets/video/case-studies/hero-case-bg-mobile.mp4" />
-    </video>
-  </section>
-  <!-- Hero Section End-->
-
-  <!-- Our Proud Achievements Section Start -->
-  <section class="opa">
-    <h2 class="reveal-bottom-2">Success Stories <br />
-      <span>Our Proud Achievements</span>
-    </h2>
-    <div class="opa-highlights-container reveal-right-3">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="title">
-              <h3>Chocolatos</h3>
-              <button onclick="openModalOHC1()">View</button>
-              <p>Garudafood faced declining awareness and sales of its key product line, "Chocolatos," exacerbated by
-                global economic declines and shifts in consumer behavior towards digital platforms, rendering
-                traditional marketing methods ineffective.
-              </p>
-            </div>
-            <div class="cs-img" onclick="openModalOHC1()">
-              <img src="../assets/img/case-studies/Case/highlights/Chocolatos/Webtoon-highlight.webp" alt="">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="title">
-              <h3>Webtoon</h3>
-              <button onclick="openModalOHC2()">View</button>
-              <p>The primary challenge was to expand Naver Webtoon's audience in Indonesia, transitioning from appealing
-                mainly to young millennials to effectively engaging Gen Z, who have significant influence in the digital
-                entertainment space.
-              </p>
-            </div>
-            <div class="cs-img" onclick="openModalOHC2()">
-              <img src="../assets/img/case-studies/Case/highlights/Webtoon/Webtoon-highlight.webp" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+  <section class="hero-about">
+    <div class="container">
+      <div class="woman-about-container">
+        <lottie-player class="woman-about reveal-right" src="../assets/video/about-us/woman.json"
+          background="transparent" speed="1" loop autoplay></lottie-player>
       </div>
+
+      <video class="hero-about-bg desktop" autoplay loop muted>
+        <source src="../assets/video/about-us/hero-about-us.mp4" />
+      </video>
+
+      <video class="hero-about-bg mobile" autoplay loop muted>
+        <source src="../assets/video/about-us/hero-about-us-mobile.mp4" />
+      </video>
     </div>
-    <div class="opa-grid-container">
-      <div class="wrapper reveal-bottom-3"
-        onclick="openModalImg(this.getAttribute('data-image'), this.getAttribute('data-image-mobile'))"
-        data-image="../assets/img/case-studies/Case/akulaku.webp"
-        data-image-mobile="../assets/img/case-studies/Case/mobile/akulaku-mobile.webp">
-        <img class="responsive-image" src="../assets/img/case-studies/Case/akulaku.webp" alt="Akulaku">
-        <h4>Akulaku</h4>
-        <div class="case-details">
-          <table>
-            <tr>
-              <td><span>Talent</span></td>
-              <td>: @racheltjia</td>
-            </tr>
-            <tr>
-              <td><span>Level</span></td>
-              <td>: Mega Influencer</td>
-            </tr>
-          </table>
-          <p class="category">#LifestyleCategory</p>
-        </div>
+  </section>
+
+  <!-- Our Story Section Start -->
+  <section class="aos">
+    <div class="container">
+      <div class="aos-container reveal-left-2">
+        <h2>About Our Story</h2>
+        <h3>Your Trusted Partner For Business</h3>
+        <p>
+          Blessing, Progress & Winning; Kamaye bridgesby performing and
+          delivering services properly,creating a solid communication that
+          answersKamaye’s partners’ needs.
+        </p>
+        <p>
+          Kamaye acts as a bridge that connects brands toreceive acceptance
+          from people through the voiceof support, conversations between both
+          parties,expressing stories, and triggering an action froma specific
+          intention, in the ever-changing digitalrealm, then leaving the trace
+          of its winning as ameasurable impact.
+        </p>
+        <p>
+          So we want to make people feel confident whenusing Kamaye as a
+          bridge, so we feel the needto add an “adaptively smart” feeling to
+          convey itsmoving progress.
+        </p>
       </div>
-      <div class="wrapper reveal-bottom-3"
-        onclick="openModalImg(this.getAttribute('data-image'), this.getAttribute('data-image-mobile'))"
-        data-image="../assets/img/case-studies/Case/chocolatos-drink-powder.webp"
-        data-image-mobile="../assets/img/case-studies/Case/mobile/chocolatos-mobile.webp">
-        <img src="../assets/img/case-studies/Case/chocolatos-drink-powder.webp" alt="Chocolatos Drink Powder">
-        <h4>Chocolatos Drink Powder</h4>
-        <div class="case-details">
-          <table>
-            <tr>
-              <td><span>Talent</span></td>
-              <td>: @efritaasmr</td>
-            </tr>
-            <tr>
-              <td><span>Level</span></td>
-              <td>: Mega Influencer</td>
-            </tr>
-          </table>
-          <p class="category">#Food #Cooking</p>
+      <div class="bridging-container reveal-right-2">
+        <div class="gradient-container">
+          <lottie-player class="background-gradient" src="../assets/video/about-us/gradient1.json"
+            background="transparent" speed="1" loop autoSize resizeMode="center" style="width: 1000px"
+            autoplay></lottie-player>
         </div>
+        <h3>BRIDGING</h3>
+        <p>
+          Communicating Kamaye’s capability through the process, method and
+          approach by showcasing its project that succesfully brought brands
+          and people together.
+        </p>
       </div>
-      <div class="wrapper reveal-bottom-3"
-        onclick="openModalImg(this.getAttribute('data-image'), this.getAttribute('data-image-mobile'))"
-        data-image="../assets/img/case-studies/Case/nanovest.webp"
-        data-image-mobile="../assets/img/case-studies/Case/mobile/nanovest-mobile.webp">
-        <img src="../assets/img/case-studies/Case/nanovest.webp" alt="Nanovest">
-        <h4>Nanovest</h4>
-        <div class="case-details">
-          <table>
-            <tr>
-              <td><span>Talent</span></td>
-              <td>: @sbngram</td>
-            </tr>
-            <tr>
-              <td><span>Level</span></td>
-              <td>: Macro Influencer</td>
-            </tr>
-          </table>
-          <p class="category">#Lifestyle</p>
+      <div class="progressing-container reveal-left-2">
+        <div class="gradient-container">
+          <lottie-player class="background-gradient" src="../assets/video/about-us/gradient3.json"
+            background="transparent" speed="1" loop autoSize resizeMode="center" style="width: 1000px"
+            autoplay></lottie-player>
         </div>
+        <h3>PROGRESSING</h3>
+        <p>
+          Sharing Kamaye’s data or insights on the sign of progress of the
+          relevant changes, innovations or novelty in the digital realm that
+          directly the marketing industry and business clients.
+        </p>
       </div>
-      <div class="wrapper reveal-bottom-3"
-        onclick="openModalImg(this.getAttribute('data-image'), this.getAttribute('data-image-mobile'))"
-        data-image="../assets/img/case-studies/Case/telkomsel-redi.webp"
-        data-image-mobile="../assets/img/case-studies/Case/mobile/telkomsel-mobile.webp">
-        <img src="../assets/img/case-studies/Case/telkomsel-redi.webp" alt="Telkomsel Redi">
-        <h4>Telkomsel Redi</h4>
-        <div class="case-details">
-          <table>
-            <tr>
-              <td><span>Talent</span></td>
-              <td>: @jonathanend</td>
-            </tr>
-            <tr>
-              <td><span>Level</span></td>
-              <td>: Macro Influencer</td>
-            </tr>
-          </table>
-          <p class="category">#Financial Education #LifestyleCategory</p>
+      <div class="blessing-container reveal-right-2">
+        <div class="gradient-container">
+          <lottie-player class="background-gradient" src="../assets/video/about-us/gradient4.json"
+            background="transparent" speed="1" loop autoSize resizeMode="center" style="width: 1000px"
+            autoplay></lottie-player>
         </div>
-      </div>
-      <div class="wrapper reveal-bottom-3"
-        onclick="openModalImg(this.getAttribute('data-image'), this.getAttribute('data-image-mobile'))"
-        data-image="../assets/img/case-studies/Case/tumbuh-lab.webp"
-        data-image-mobile="../assets/img/case-studies/Case/mobile/tumbuhlab-mobile.webp">
-        <img src="../assets/img/case-studies/Case/tumbuh-lab.webp" alt="Tumbuh Lab">
-        <h4>Tumbuh Lab</h4>
-        <div class="case-details">
-          <table>
-            <tr>
-              <td><span>Talent</span></td>
-              <td>: @wendywalters</td>
-            </tr>
-            <tr>
-              <td><span>Level</span></td>
-              <td>: Mega Influencer</td>
-            </tr>
-          </table>
-          <p class="category">#Beauty #Lifestyle</p>
-        </div>
+        <h3>BLESSING</h3>
+        <p>
+          Engaging in an interaction that involves Kamaye and influential
+          people such as Key Opinion Leaders, Influencers, Brands or even
+          Consumer and Audiences.
+        </p>
       </div>
     </div>
   </section>
-  <!-- Our Proud Achievements Section End -->
+  <!-- Our Story Section End-->
 
   <!-- Our Fun Fact Section Start -->
-  <section class="off" style="background-color: #ff6137;">
+  <section class="off">
     <div class="container">
-      <h2 class="cs-off-title"><span>Be a part</span> of our journey and solve your marketing problems with us!</h2>
+      <h2>Our Fun Fact</h2>
       <div class="ibc-container">
         <div class="influencers-container flex">
           <p class="number">
@@ -316,117 +241,39 @@
   </section>
   <!-- Our Fun Fact Section End -->
 
-  <!-- Modal Box Highlights Start -->
-  <div id="modal-ohc-1" class="modal-ohc-1">
-    <div class="modal-container">
-      <div class="modal-content-ohc-1">
-        <span class="close" onclick="closeModalOHC1()">&times;</span>
-        <div class="modal-body">
-          <div class="details-container">
-            <div class="logo-container">
-              <img class="kamayeLogo" src="../assets/img/case-studies/Case/highlights/Kamaye-Logo.svg" alt="">
-              <img class="mediaLogo"
-                src="../assets/img/case-studies/Case/highlights/Chocolatos/Chocolatos-Tiktok-Logo.webp" alt="">
-            </div>
-            <p class="date">April 2021</p>
-            <h3>Chocolatos Drink Powder</h3>
-            <p class="obj-title">Objective</p>
-            <img class="objective-img"
-              src="../assets/img/case-studies/Case/highlights/Chocolatos/Chocolatos-Conversion-Logo.webp" alt="">
-            <img class="detail"
-              src="../assets/img/case-studies/Case/highlights/Chocolatos/Chocolatos-Talent&Category-Box.webp" alt="">
-            <div class="caso">
-              <div class="challenge">
-                <p class="header">Challenge:</p>
-                <p class="text">Garudafood faced declining awareness and sales of its key product line, "Chocolatos,"
-                  exacerbated by
-                  global economic declines and shifts in consumer behavior towards digital platforms, rendering
-                  traditional marketing methods ineffective.
-                </p>
-              </div>
-              <div class="solution">
-                <p class="header">Solution:</p>
-                <p class="text">Garudafood launched the "Chocolatos Recipe" campaign to target Millennials and Gen Z.
-                  This
-                  monthly
-                  series of cooking campaigns collaborated with influencers across various demographics and expertise
-                  levels to showcase Chocolatos as a versatile ingredient for homemade desserts. Utilizing TikTok's
-                  popularity and the trend of home cooking, the campaign produced viral content, achieving over 5
-                  million
-                  views monthly at a low cost per view (CPV). The campaign's success increased Chocolatos' regional
-                  sales
-                  and market visibility, with TikTok influencers gaining significant social media prominence. This
-                  initiative effectively bridged traditional marketing with the digital landscape, maintaining relevance
-                  and awareness during the pandemic while establishing Chocolatos as a popular choice for homemade
-                  treats.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="promotor-img">
-            <img src="../assets/img/case-studies/Case/highlights/Chocolatos/Chocolatos-Promotor.webp" alt="">
-          </div>
-        </div>
-      </div>
+  <!-- Brand Voice Section Start -->
+  <section class="bv">
+    <div class="container reveal-left">
+      <img src="../assets/img/kamaye-logo.svg" alt="" />
+      <h2>Brand Voice</h2>
+      <h3>Savvy & Optimistic</h3>
+      <p>
+        <span>Savvy</span> : When it comes to the digital realm and bridging
+        people, Kamaye knows it all. Giving savviness into its voice could
+        show the practicality and deep understanding that Kamaye has.
+      </p>
+      <p>
+        <span>Optimistic</span> : Optimistic : A universal voice that people
+        understand, what drives people forward and make significant progress.
+        Kamaye treats everyone positively and communicates effectively.
+      </p>
     </div>
-  </div>
-  <div id="modal-ohc-2" class="modal-ohc-2">
-    <div class="modal-container">
-      <div class="modal-content-ohc-2">
-        <span class="close" onclick="closeModalOHC2()">&times;</span>
-        <div class="modal-body">
-          <div class="details-container">
-            <div class="logo-container">
-              <img class="kamayeLogo" src="../assets/img/case-studies/Case/highlights/Kamaye-Logo.svg" alt="">
-              <img class="mediaLogo" src="../assets/img/case-studies/Case/highlights/Webtoon/Webtoon-Youtube.webp">
-            </div>
-            <p class="date">June 2022</p>
-            <h3>Line Webtoon</h3>
-            <p class="obj-title">Objective</p>
-            <img class="objective-img" src="../assets/img/case-studies/Case/highlights/Webtoon/Webtoon-Conversion.webp"
-              alt="">
-            <img class="detail" src="../assets/img/case-studies/Case/highlights/Webtoon/Webtoon-Talent&Categories.webp"
-              alt="">
-            <div class="caso">
-              <div class="challenge">
-                <p class="header">Challenge:</p>
-                <p class="text">The primary challenge was to expand Naver Webtoon's audience in Indonesia, transitioning
-                  from appealing mainly to young millennials to effectively engaging Gen Z, who have significant
-                  influence
-                  in the digital entertainment space.</p>
-              </div>
-              <div class="solution">
-                <p class="header">Solution:</p>
-                <p class="text">To address this challenge, Naver Webtoon partnered with Kamaye, an influencer agency, to
-                  execute a multifaceted marketing campaign. This campaign was strategically launched during Ramadan to
-                  maximize cultural relevance. It leveraged TikTok as the main platform, involving 87 influencers to
-                  enhance conversions, engagement, and awareness among Gen Z users. The influencers were categorized
-                  based on their strengths and employed various innovative concepts such as Virtual Casting, Fun Dubbing
-                  Comedies, Story Reviews, and Song Covers. This diverse strategy aimed to maximize audience engagement,
-                  particularly focusing on promoting "Operation True Love," a new title. The campaign achieved over 13
-                  million views, 335,000 comments, and reached more than 13 million unique users, with Story Reviews
-                  driving the highest engagement</p>
-              </div>
-            </div>
-          </div>
-          <div class="promotor-img">
-            <img src="../assets/img/case-studies/Case/highlights/Webtoon/Webtoon-Promotor.webp" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Box Highlights End -->
+    <lottie-player class="bv-lottie reveal-bottom-2" src="../assets/video/about-us/BRAND_VOICE.json"
+      background="transparent" speed="1" loop autoplay></lottie-player>
+  </section>
+  <!-- Brand Voice Section End -->
 
-  <!-- Modal Box OGC Start -->
-  <div id="modal-ogc" class="modal-ogc">
-    <div class="modal-content-ogc">
-      <span class="close" onclick="closeModalOGC()">&times;</span>
-      <img id="modalImage" src="" alt="Case Study Image">
-    </div>
-  </div>
-  <!-- Modal Box OGC End -->
-  <!-- Our Proud Achievements Section End -->
+  <!-- Team Section Start -->
+  <section class="home-team">
+    <video class="team-video desktop" autoplay muted>
+      <source src="../assets/video/meet-our-team-desktop.mp4">
+    </video>
+
+    <video class="team-video mobile" autoplay muted>
+      <source src="../assets/video/meet-our-team-mobile.mp4">
+    </video>
+  </section>
+  <!-- Team Section End -->
 
   <!-- How To Work Section Start -->
   <section class="htw" id="contact">
@@ -482,11 +329,11 @@
     </div>
     <div class="htw-container">
       <video class="htw-video desktop" autoplay muted>
-        <source src="../assets/video/home-page/work_with_us_home.mp4">
+        <source src="../assets/video/about-us/work_with_us_about.mp4">
       </video>
 
       <video class="htw-video mobile" autoplay muted>
-        <source src="../assets/video/home-page/work_with_us_home_mobile.mp4">
+        <source src="../assets/video/about-us/work_with_us_about_mobile.mp4">
       </video>
 
 
@@ -524,8 +371,8 @@
       </div>
     </div>
   </footer>
-  <!-- Footer Section End - ->
-  
+  <!-- Footer Section End -->
+
   <!-- Scroll To Top Button Start -->
   <section class="stt">
     <button class="Btn" onclick="topFunction()" id="scrollToTopBtn" title="Back To Top">
@@ -538,18 +385,12 @@
   </section>
   <!-- Scroll To Top Button End -->
 
-  <!-- Javascript  -->
+  <!-- Javascript -->
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Lottie -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" type="module"></script>
-
-  <!-- My Javascript-->
-  <script src="../js/script.js"></script>
 
   <script>
     feather.replace();
@@ -650,6 +491,9 @@
       }
     });
   </script>
+
+  <!-- My JavaScript -->
+  <script src="../src/js/script.js"></script>
 </body>
 
 </html>
