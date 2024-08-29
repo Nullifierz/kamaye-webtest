@@ -4,6 +4,8 @@ The Kamaye website is a platform that provides influencer marketing services, co
 
 
 ## Folder Structure
+Go to Edit File to see the structure
+
 kamaye/
 │
 ├── assets/                # Contains images, videos, fonts, lottie, and icons
