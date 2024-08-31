@@ -3554,6 +3554,10 @@ footer .footer-container .navigation-container a:hover {
 
 /* Mobile Phone */
 @media (max-width: 430px) {
+  body {
+    touch-action: manipulation;
+    /* Prevents double-tap zoom */
+  }
 
   /* Hero Home Section */
   .hero-home .container {
